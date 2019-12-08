@@ -96,13 +96,11 @@ func gameIsContinue(chessboard *Chessboard) bool {
 					chessboard.WinPlayer = chessboard.Chessboard[i][j]
 					return false
 				}
-
 				//竖
 				if i <= Column-winNum && chessboard.Chessboard[i][j] == chessboard.Chessboard[i+1][j] && chessboard.Chessboard[i][j] == chessboard.Chessboard[i+2][j] && chessboard.Chessboard[i][j] == chessboard.Chessboard[i+3][j] {
 					chessboard.WinPlayer = chessboard.Chessboard[i][j]
 					return false
 				}
-
 				//对角线
 				if i <= Column-winNum && j <= winNum-1 && chessboard.Chessboard[i][j] == chessboard.Chessboard[i+1][j+1] && chessboard.Chessboard[i][j] == chessboard.Chessboard[i+2][j+2] && chessboard.Chessboard[i][j] == chessboard.Chessboard[i+3][j+3] {
 					chessboard.WinPlayer = chessboard.Chessboard[i][j]
