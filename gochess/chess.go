@@ -134,7 +134,7 @@ func printChessboard(chessboard Chessboard) {
 		for j := 0; j < Row; j++ {
 			switch chessboard.Chessboard[i][j] {
 			case 0:
-				fmt.Print("·")
+				fmt.Print(".")
 			case 1:
 				fmt.Print("x")
 			case 2:
