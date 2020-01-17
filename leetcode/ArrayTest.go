@@ -87,3 +87,21 @@ func logestCommonPrefix(strs []string) string {
 
 	return strs[0][0:i]
 }
+
+//最大子序列和
+// func maxSubArray(nums []int) int {
+// 	thisSum:=nums[0]
+// 	maxSum:=nums[0]
+// 	for i:=1;i<len(nums);i++ {
+// 		if(nums[i]>thisSum+nums[i]) {
+// 			thisSum=nums[i]
+// 		} else {
+// 			thisSum=thisSum+nums[i]
+// 		}
+	
+// 		if(maxSum<thisSum) {
+// 			maxSum=thisSum
+// 		}
+// 	}
+// 	return maxSum
+// 	}
